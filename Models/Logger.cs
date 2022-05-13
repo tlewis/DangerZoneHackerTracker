@@ -1,14 +1,10 @@
 ﻿using AsyncFriendlyStackTrace;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DangerZoneHackerTracker
 {
-	class Logger
+    class Logger
 	{
 		private static FileStream FileStream;
 		private static StreamWriter StreamWriter;

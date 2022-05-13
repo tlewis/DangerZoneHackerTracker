@@ -1,16 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DangerZoneHackerTracker
 {
-	class CheaterComparer : IEqualityComparer<Cheater>
+    class CheaterComparer : IEqualityComparer<Cheater>
 	{
 		public bool Equals(Cheater x, Cheater y) => x.AccountID == y.AccountID;
 		public int GetHashCode([DisallowNull] Cheater obj) => obj.AccountID.GetHashCode();

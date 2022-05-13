@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace DangerZoneHackerTracker
 {
-	// A list with events for when when it's modified
-	public class EventableList<T> : List<T>
+    // A list with events for when when it's modified
+    public class EventableList<T> : List<T>
 	{
 		public delegate void CollectionChangedHandler(EventableSortedSet<T> sender, CollectionChangedAction action, T? itemChanged);
 
