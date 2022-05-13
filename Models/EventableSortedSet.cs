@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 namespace DangerZoneHackerTracker
 {
 
-
 	public class EventableSortedSet<T> : SortedSet<T>
 	{
 		public EventableSortedSet(IComparer<T> comparer) : base(comparer) { }
