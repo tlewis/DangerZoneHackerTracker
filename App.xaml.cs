@@ -38,7 +38,7 @@ namespace DangerZoneHackerTracker
 
 		private const string DatabaseFilename = "Cheaters.sq3";
 
-		private bool FlushPerformed = false;
+		private bool FlushPerformed = true;
 
 		private static string DatabasePath
 		{
