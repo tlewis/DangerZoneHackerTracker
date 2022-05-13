@@ -222,7 +222,7 @@ namespace DangerZoneHackerTracker
 				user.Cheater.LastKnownName = user.Name;
 				if (user.Cheater.ThreatLevel > 3)
 				{
-					SoundManager.PlayEmbeddedSound("haaaaxedit.mp3", Settings["Volume"]);
+					SoundManager.PlayEmbeddedSound("tng_red_alert3.mp3", Settings["Volume"]);
 				}
 				Cheaters.Save();
 			}

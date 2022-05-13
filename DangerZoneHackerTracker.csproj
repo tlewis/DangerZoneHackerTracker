@@ -65,13 +65,11 @@
 
 
 	<ItemGroup>
-		<None Remove="app.manifest" />
 		<None Remove="DangerZoneHackerTracker.exe - Shortcut.lnk" />
 		<None Remove="DangerZoneHackerTrackerV2.zip" />
-		<None Remove="Resources\DZ_ICON.png" />
 		<None Remove="Resources\favicon.ico" />
-		<None Remove="Resources\haaaaxedit.mp3" />
 		<None Remove="Resources\icon.png" />
+		<None Remove="Resources\tng_red_alert3.mp3" />
 		<None Remove="Views\13614349.png" />
 	</ItemGroup>
 
@@ -84,7 +82,7 @@
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 		<EmbeddedResource Include="Resources\favicon.ico" />
-		<EmbeddedResource Include="Resources\haaaaxedit.mp3" />
+		<EmbeddedResource Include="Resources\tng_red_alert3.mp3" />
 		<Content Include="Resources\icon.png">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
