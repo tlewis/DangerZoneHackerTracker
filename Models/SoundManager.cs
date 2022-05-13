@@ -1,15 +1,9 @@
 ﻿using NAudio.Wave;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DangerZoneHackerTracker
 {
-	class SoundManager
+    class SoundManager
 	{
 		public static void PlayEmbeddedSound(string name, float volume)
 		{

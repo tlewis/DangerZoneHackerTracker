@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
+﻿using System.Windows.Media;
 
 namespace DangerZoneHackerTracker
 {
-	public static class ColorExtensions
+    public static class ColorExtensions
 	{
         public static Color Lerp(this ref Color left, Color right, double amount)
         {

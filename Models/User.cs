@@ -2,19 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Shapes;
-using System.Windows.Media;
 using System.Diagnostics;
 
 namespace DangerZoneHackerTracker
 {
-	class UserComparer : IEqualityComparer<User>, IComparer<User>
+    class UserComparer : IEqualityComparer<User>, IComparer<User>
 	{
 		// index sorting
 		public int Compare(User x, User y) => x.Index.CompareTo(y.Index);

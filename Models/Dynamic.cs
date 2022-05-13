@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Windows.Media;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace DangerZoneHackerTracker
 {
-	/// <summary>
-	/// acts as a strongly typed dynamic primitive, can implicitly convert between floats, ints, bools, doubles, Colors, and strings.
-	/// Underlying data structure is a string
-	/// </summary>
-	public class Dynamic : IConvertible, IComparable
+    /// <summary>
+    /// acts as a strongly typed dynamic primitive, can implicitly convert between floats, ints, bools, doubles, Colors, and strings.
+    /// Underlying data structure is a string
+    /// </summary>
+    public class Dynamic : IConvertible, IComparable
 	{
 		public double UpperBounds = double.MaxValue;
 		public double LowerBounds = double.MinValue;

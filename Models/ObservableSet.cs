@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DangerZoneHackerTracker
 {
-	public class ObservableSet<T> : HashSet<T>, INotifyCollectionChanged
+    public class ObservableSet<T> : HashSet<T>, INotifyCollectionChanged
 	{
 		public event NotifyCollectionChangedEventHandler CollectionChanged;
 

@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Timers;
-
-using ThreadTimer = System.Threading.Timer;
 using SystemTimer = System.Timers.Timer;
 
 namespace DangerZoneHackerTracker
 {
-	public class RemoteConsole : IDisposable
+    public class RemoteConsole : IDisposable
 	{
 		TcpClient _base;
 		NetworkStream Stream;

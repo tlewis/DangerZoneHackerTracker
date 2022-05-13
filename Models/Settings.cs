@@ -1,16 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.IO;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Windows.Media.Animation;
 
 namespace DangerZoneHackerTracker
 {
 
-	public class Settings : Dictionary<string, string>
+    public class Settings : Dictionary<string, string>
 	{
 		private static readonly string path = InitPath();
 		/// <summary>

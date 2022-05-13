@@ -1,15 +1,12 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DangerZoneHackerTracker.ProfileData
 {
-	// Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
-	public class Xml
+    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
+    public class Xml
 	{
 		[JsonProperty("@version")]
 		public string Version { get; set; }

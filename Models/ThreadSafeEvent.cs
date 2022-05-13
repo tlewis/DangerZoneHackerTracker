@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Threading;
 
 namespace DangerZoneHackerTracker
 {
-	public class ThreadSafeEvent<T>
+    public class ThreadSafeEvent<T>
 	{
 		private struct SafeEvent
 		{

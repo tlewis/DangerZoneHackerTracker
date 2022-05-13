@@ -6,7 +6,6 @@
  * https://github.com/SteamRE/SteamKit/blob/master/SteamKit2/SteamKit2/Types/SteamID.cs
  */
 
-
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

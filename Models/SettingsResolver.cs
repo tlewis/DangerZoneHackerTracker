@@ -4,13 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DangerZoneHackerTracker
 {
-	// allows us to pull private properties and fields when we handle json files
-	public class SettingsResolver : DefaultContractResolver
+    // allows us to pull private properties and fields when we handle json files
+    public class SettingsResolver : DefaultContractResolver
 	{
 		protected override IList<JsonProperty> CreateProperties(Type type, MemberSerialization memberSerialization)
 		{

@@ -1,31 +1,19 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
+﻿using System;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Net.Sockets;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Threading;
-using System.Dynamic;
-using System.Xml;
-using System.Windows.Controls;
-using System.Windows.Media.Imaging;
-using System.Windows.Input;
 using System.IO;
 using Microsoft.Data.Sqlite;
 using Microsoft.Win32;
-using AsyncFriendlyStackTrace;
 
 namespace DangerZoneHackerTracker
 {
-	/// <summary>
-	/// Interaction logic for App.xaml
-	/// </summary>
-	public partial class App : Application, IDisposable
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application, IDisposable
 	{
 		Settings Settings;
 		public RemoteConsole Console;
