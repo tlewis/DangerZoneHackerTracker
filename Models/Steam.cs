@@ -34,30 +34,6 @@ namespace DangerZoneHackerTracker
 
 			var temp = JsonConvert.DeserializeObject<ProfileData.Root>(json);
 
-
-
-			return temp.profile;
-		}
-
-		public static ProfileData.Profile GetProfileData(string url)
-		{
-			var xmlText = WebReader.ReadToEnd(url);
-			// TODO: Add proper null checking instead
-			if(xmlText.StartsWith("<!DOCTYPE html>"))
-			{
-				return null;
-			}
-			// Parse xml into object
-			XmlDocument doc = new XmlDocument();
-			doc.LoadXml(xmlText);
-
-			// parse xml object as json text
-			string json = JsonConvert.SerializeXmlNode(doc);
-
-			var temp = JsonConvert.DeserializeObject<ProfileData.Root>(json);
-
-
-
 			return temp.profile;
 		}
 	}
