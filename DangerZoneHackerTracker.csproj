@@ -10,9 +10,16 @@
 		<Authors>KiD Fearless</Authors>
 		<Product>DangerZoneHackerTracker</Product>
 		<Platforms>AnyCPU;x64;x86</Platforms>
-		<SignAssembly>true</SignAssembly>
-		<AssemblyOriginatorKeyFile>DangerZoneHackerTrackerKiDFearLess.pfx</AssemblyOriginatorKeyFile>
+		<SignAssembly>True</SignAssembly>
+		<AssemblyOriginatorKeyFile>keypair-fibby.snk</AssemblyOriginatorKeyFile>
 		<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
+		<DelaySign>False</DelaySign>
+		<PackageTags>cs:go; dangerzone; gaming</PackageTags>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<PackageProjectUrl></PackageProjectUrl>
+		<PackageIcon>DZ_ICON.png</PackageIcon>
+		<RepositoryUrl>https://github.com/tlewis/DangerZoneHackerTracker</RepositoryUrl>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -94,10 +101,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="AsyncFriendlyStackTrace" Version="1.6.0" />
-		<PackageReference Include="Biaui" Version="1.0.23" />
-		<PackageReference Include="Microsoft.Data.Sqlite" Version="5.0.1" />
-		<PackageReference Include="NAudio" Version="1.10.0" />
-		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="Biaui" Version="1.0.24" />
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.5" />
+		<PackageReference Include="NAudio" Version="2.0.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -112,6 +119,25 @@
 
 	<ItemGroup>
 	  <Folder Include="Properties\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Properties\Settings.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Settings.settings</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Properties\Settings.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+	  </None>
+	  <None Update="Resources\DZ_ICON.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
