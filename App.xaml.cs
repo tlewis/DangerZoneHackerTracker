@@ -49,6 +49,9 @@ namespace DangerZoneHackerTracker
 		public string HostName { get; set; }
 
 		private const string DatabaseFilename = "Cheaters.sq3";
+
+		private bool FlushPerformed = false;
+
 		private static string DatabasePath
 		{
 			get
@@ -241,6 +244,7 @@ namespace DangerZoneHackerTracker
 		{
 			if (line.StartsWith("hostname"))
 			{
+				FlushPerformed = false;
 				var hostMatch = HostNameRegex.Match(line);
 				if (HostName != hostMatch.Groups[1].Value)
 				{
@@ -254,6 +258,13 @@ namespace DangerZoneHackerTracker
 			{
 				// remove the users from the list preemptively but not from the grid until we have a new set.
 				Users.Clear();
+
+				// perform a flush once when not connected to a server
+				if (!FlushPerformed)
+                {
+					Console.Execute("echo \"flushing cache to prevent crashes\"; sv_cheats 1; flush");
+					FlushPerformed = true;
+                }
 				return;
 			}
 
@@ -300,8 +311,6 @@ namespace DangerZoneHackerTracker
 				}
 				return;
 			}
-
-
 		}
 
 
