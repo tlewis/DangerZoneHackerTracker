@@ -1,31 +1,13 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Dynamic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace DangerZoneHackerTracker
 {
 
-	/// <summary>
-	/// Interaction logic for BulkAddWindow.xaml
-	/// </summary>
-	public partial class AddCheater
+    /// <summary>
+    /// Interaction logic for BulkAddWindow.xaml
+    /// </summary>
+    public partial class AddCheater
 	{
 		static Settings Settings = Settings.Init();
 		static CheaterSet Cheaters = CheaterSet.Init();

@@ -20,10 +20,10 @@ using Path = System.IO.Path;
 namespace DangerZoneHackerTracker
 {
 
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	public partial class MainWindow
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow
 	{
 		//private GridView GridView => DataBindingObject.View as GridView;
 		//public double ColumnWidth => GridView.Columns.Count / Math.Max(DataBindingObject.ActualWidth, 1);

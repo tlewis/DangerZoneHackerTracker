@@ -1,12 +1,12 @@
-﻿using System;
-using System.Linq;
-using System.Windows;
+﻿using Microsoft.Data.Sqlite;
+using Microsoft.Win32;
+using System;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
-using System.IO;
-using Microsoft.Data.Sqlite;
-using Microsoft.Win32;
+using System.Windows;
 
 namespace DangerZoneHackerTracker
 {
