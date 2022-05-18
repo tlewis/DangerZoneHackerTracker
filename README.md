@@ -7,6 +7,8 @@
 * Automatically flushes cached memory between maps to avoid crashes
 
 ## How to use
+* Runtime dependencies:
+  * .Net Runtime 6: https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.5-windows-x64-installer
 * Add `-netconport 2121` to your CS:GO launch options. This allows DangerZoneHackerTracker to send & receive text from CS:GO's console
 * Launch CS:GO and `DangerZoneHackerTracker.exe`
 * _Optional_: you can import the included `exported_cheaters` JSON file to initialize your cheater list with one curated by myself. Otherwise you will need to add new cheaters to your local database by hand as you encounter them
