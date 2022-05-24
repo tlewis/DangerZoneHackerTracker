@@ -6,15 +6,21 @@
 * Provides a UI for adding newly-discovered cheaters to your cheaters database
 * Automatically flushes cached memory between maps to avoid crashes
 
-## How to use
-* Runtime dependencies:
+## Initial setup
+* Install runtime dependencies:
   * .Net Runtime 6: https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.5-windows-x64-installer
 * Add `-netconport 2121` to your CS:GO launch options. This allows DangerZoneHackerTracker to send & receive text from CS:GO's console
+
+## How to use
 * Launch CS:GO and `DangerZoneHackerTracker.exe`
-* _Optional_: you can import the included `exported_cheaters` JSON file to initialize your cheater list with one curated by myself. Otherwise you will need to add new cheaters to your local database by hand as you encounter them
+* Queue for Danger Zone and join a game
+* When connected to a server, the Hacker Tracker will scan the list of players in your server and alert you with a sound and toast notification if any are part of your hackers database
+* If you have a known cheater in your server, you will see an *Alert Server* button next to their name in the players list. Clicking this will let the other players in your server know about the presence of the cheater
+* _Optional_: you can import the included `exported_cheaters` JSON file to initialize your cheater list with one curated by myself. Otherwise you will need to add new cheaters to your local database as you encounter them
 
 ## Adding Cheaters
-* Through the DangerZoneHackerTracker UI: from the **Add** menu, you can bulk add cheaters by providing a list of Steam profile URLs, or add a single cheater which allows you to specify cheat types threat level, and notes
+* Through the DangerZoneHackerTracker UI: from the **Add** menu, you can bulk add cheaters by providing a list of Steam profile URLs, or add a single cheater which allows you to specify cheat types and other information
+* When connected to a server, you can add a player directly from the player's list
 * Import a `.json` or `.sq3` database previously exported from another DangerZoneHackerTracker instance
 
 ## Other useful console commands
@@ -29,6 +35,10 @@
 
 ## Ideas for future improvement
 * Add ability to use a remote SQL database of cheaters that can be shared between multiple users or the entire community
+* Misc UI improvements
+  * Sortable columns for the hacker list
+  * Filter/search for the hacker list
+* Do you have thoughts on how to make this more useful? Please let me know in the project's Issues
 
 ## Project History
 * Originally developed by KidFearless: https://github.com/kidfearless/DangerZoneHackerTracker
